@@ -22,3 +22,9 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 30 );
 
 // END ENQUEUE PARENT ACTION
+
+function estiloCSS() {
+    wp_register_style( 'estiloCSS', get_stylesheet_directory_uri() . '/css/estilo.min.css' );
+    wp_enqueue_style( 'estiloCSS' );
+}
+add_action( 'wp_enqueue_scripts', 'estiloCSS', 999);
