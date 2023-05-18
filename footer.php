@@ -84,5 +84,95 @@ if ( presscore_is_content_visible() ) : ?>
 		</div>
 	</div>
 </div>
+
+	<div class="fundo">
+		<div class="container">
+			<div class="footer-novo">
+				<div class="logo">
+					<img src="http://localhost/vidalab/wp-content/uploads/2023/05/logo-footer.png" alt="Logo do VidaLab Branca">
+				</div>
+				<div class="menu">
+					<?php
+						$menu_items = wp_get_nav_menu_items('Menu Principal');
+						foreach ($menu_items as $item) {
+								echo '<li><a href="' . $item->url . '">' . $item->title . '</a></li>';
+						}
+						?>
+				</div>
+				<div class="infos">
+					<div class="item">
+						<h3>Horário de atendimento</h3>
+						<p>Segunda-feira a quinta-feira: 06:30 às 18:00</p>
+						<p>Sexta-feira: 06:30 às 17:00</p>
+					</div>
+					<div class="item-inline">
+						<h3>Whatsapp:</h3>
+						<p>(37) 99941-1526</p>
+					</div>
+					<div class="item-inline">
+						<h3>Email:</h3>
+						<p>atendimento@vidalabmg.com.br</p>
+					</div>
+					<div class="item-inline">
+						<h3>Central de Atendimento:</h3>
+						<p>(37) 3321-4001</p>
+					</div>
+			
+				</div>
+				<div class="social">
+					<h3>Redes Sociais</h3>
+					<a target="_blank" href="https://www.facebook.com/vidalaboratorioformiga"><img src="http://localhost/vidalab/wp-content/uploads/2023/05/icon-face-2.png" alt=""></a>
+					<a target="_blank" href="https://www.instagram.com/vida_lab1/"><img src="http://localhost/vidalab/wp-content/uploads/2023/05/icon-insta-2.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	
+		setTimeout(() => {
+			var navLinks = document.querySelectorAll('.main-nav a');
+			navLinks.forEach(function(link){
+				link.addEventListener('click', smoothScroll);
+				console.log(link)
+			})
+
+			function smoothScroll(e) {
+				e.preventDefault();
+				console.log('teste', e)
+				var targetId = this.getAttribute('href');
+				var targetElement = document.querySelector(targetId);
+				var headerHeight = document.querySelector('#phantom').offsetHeight;
+
+				window.scrollTo({
+					top: targetElement.offsetTop - headerHeight,
+					behavior: 'smooth'
+				});
+			}
+		}, 1000);
+
+		setTimeout(() => {
+			var navLinks = document.querySelectorAll('.menu a');
+			navLinks.forEach(function(link){
+				link.addEventListener('click', smoothScroll);
+				console.log(link)
+			})
+
+			function smoothScroll(e) {
+				e.preventDefault();
+				console.log('teste', e)
+				var targetId = this.getAttribute('href');
+				var targetElement = document.querySelector(targetId);
+				var headerHeight = document.querySelector('#phantom').offsetHeight;
+
+				window.scrollTo({
+					top: targetElement.offsetTop - headerHeight,
+					behavior: 'smooth'
+				});
+			}
+		}, 1000);
+
+</script>
+
 </body>
 </html>
