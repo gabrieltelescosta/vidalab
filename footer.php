@@ -89,7 +89,7 @@ if ( presscore_is_content_visible() ) : ?>
 		<div class="container">
 			<div class="footer-novo">
 				<div class="logo">
-					<img src="http://localhost/vidalab/wp-content/uploads/2023/05/logo-footer.png" alt="Logo do VidaLab Branca">
+					<img src="https://vidalabmg.com.br/wp-content/uploads/2023/05/logo-footer.png" alt="Logo do VidaLab Branca">
 				</div>
 				<div class="menu">
 					<?php
@@ -121,8 +121,8 @@ if ( presscore_is_content_visible() ) : ?>
 				</div>
 				<div class="social">
 					<h3>Redes Sociais</h3>
-					<a target="_blank" href="https://www.facebook.com/vidalaboratorioformiga"><img src="http://localhost/vidalab/wp-content/uploads/2023/05/icon-face-2.png" alt=""></a>
-					<a target="_blank" href="https://www.instagram.com/vida_lab1/"><img src="http://localhost/vidalab/wp-content/uploads/2023/05/icon-insta-2.png" alt=""></a>
+					<a target="_blank" href="https://www.facebook.com/vidalaboratorioformiga"><img src="https://vidalabmg.com.br/wp-content/uploads/2023/05/icon-face-2.png" alt=""></a>
+					<a target="_blank" href="https://www.instagram.com/vida_lab1/"><img src="https://vidalabmg.com.br/wp-content/uploads/2023/05/icon-insta-2.png" alt=""></a>
 				</div>
 			</div>
 		</div>
