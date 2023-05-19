@@ -202,4 +202,8 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
   color: #fff;
   border: none;
   padding: 10px;
+}
+
+.dt-mobile-header .buscar-exame {
+  margin-top: 20px;
 }/*# sourceMappingURL=estilo.css.map */
