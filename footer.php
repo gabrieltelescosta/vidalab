@@ -173,6 +173,7 @@ if ( presscore_is_content_visible() ) : ?>
 		}, 1000);
 
 </script>
+<script type="text/javascript" src="https://app.lifesys.com.br/laudos/plugin/integracao/enviar.js"></script>
 
 </body>
 </html>

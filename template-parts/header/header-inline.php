@@ -24,7 +24,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php presscore_render_header_elements( 'near_menu_right' ); ?>
 
 		<div class="buscar-exame">
-			
+		<form id="form_laudos" method="POST">
+			<label class="titulo">Buscar exames</label>
+			<input type="text" name="codigocnpj" data-required="true" data-title="Código ou CNPJ" placeholder="Código ou CNPJ">
+			<input type="password" name="senha" data-required="true" data-title="Senha" placeholder="Senha">
+			<button>Enviar</button>
+		</form>
 		</div>
 
 	</header>

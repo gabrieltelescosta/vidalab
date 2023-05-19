@@ -194,3 +194,24 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit{
     opacity: .6;
   }
 }
+
+.buscar-exame{
+  #form_laudos{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    padding: 20px;
+    padding-top: 10px;
+    margin: 0 10px;
+    .titulo{
+      text-align: center;
+      font-weight: bold;
+    }
+    button{
+      background: #c30c21;
+      color: #fff;
+      border: none;
+      padding: 10px;
+    }
+  }
+}
