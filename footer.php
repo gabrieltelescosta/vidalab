@@ -130,45 +130,87 @@ if ( presscore_is_content_visible() ) : ?>
 	
 	<script>
 	
-		setTimeout(() => {
-			var navLinks = document.querySelectorAll('.main-nav a');
-			navLinks.forEach(function(link){
-				link.addEventListener('click', smoothScroll);
-			})
+		if (window.innerWidth > 500){
+			setTimeout(() => {
+				var navLinks = document.querySelectorAll('.main-nav a');
+				navLinks.forEach(function(link){
+					link.addEventListener('click', smoothScroll);
+				})
 
-			function smoothScroll(e) {
-				e.preventDefault();
-				console.log('teste', e)
-				var targetId = this.getAttribute('href');
-				var targetElement = document.querySelector(targetId);
-				var headerHeight = document.querySelector('#phantom').offsetHeight;
+				function smoothScroll(e) {
+					e.preventDefault();
+					var targetId = this.getAttribute('href');
+					var targetElement = document.querySelector(targetId);
+					var headerHeight = document.querySelector('#phantom').offsetHeight;
 
-				window.scrollTo({
-					top: targetElement.offsetTop - headerHeight,
-					behavior: 'smooth'
-				});
-			}
-		}, 1000);
+					window.scrollTo({
+						top: targetElement.offsetTop - headerHeight,
+						behavior: 'smooth'
+					});
+				}
+			}, 1000);
 
-		setTimeout(() => {
-			var navLinks = document.querySelectorAll('.menu a');
-			navLinks.forEach(function(link){
-				link.addEventListener('click', smoothScroll);
-			})
+			setTimeout(() => {
+				var navLinks = document.querySelectorAll('.menu a');
+				navLinks.forEach(function(link){
+					link.addEventListener('click', smoothScroll);
+				})
 
-			function smoothScroll(e) {
-				e.preventDefault();
-				console.log('teste', e)
-				var targetId = this.getAttribute('href');
-				var targetElement = document.querySelector(targetId);
-				var headerHeight = document.querySelector('#phantom').offsetHeight;
+				function smoothScroll(e) {
+					e.preventDefault();
+					console.log('teste', e)
+					var targetId = this.getAttribute('href');
+					var targetElement = document.querySelector(targetId);
+					var headerHeight = document.querySelector('#phantom').offsetHeight;
 
-				window.scrollTo({
-					top: targetElement.offsetTop - headerHeight,
-					behavior: 'smooth'
-				});
-			}
-		}, 1000);
+					window.scrollTo({
+						top: targetElement.offsetTop - headerHeight,
+						behavior: 'smooth'
+					});
+				}
+			}, 1000);
+		} else {
+			setTimeout(() => {
+				var navLinks = document.querySelectorAll('.mobile-main-nav a');
+				navLinks.forEach(function(link){
+					link.addEventListener('click', smoothScroll);
+					
+				})
+
+				function smoothScroll(e) {
+					console.log('click');
+					e.preventDefault();
+					var targetId = this.getAttribute('href');
+					var targetElement = document.querySelector(targetId);
+					var headerHeight = document.querySelector('.masthead').offsetHeight;
+
+					window.scrollTo({
+						top: targetElement.offsetTop - headerHeight,
+						behavior: 'smooth'
+					});
+				}
+			}, 1000);
+
+			setTimeout(() => {
+				var navLinks = document.querySelectorAll('.menu a');
+				navLinks.forEach(function(link){
+					link.addEventListener('click', smoothScroll);
+				})
+
+				function smoothScroll(e) {
+					e.preventDefault();
+					console.log('teste', e)
+					var targetId = this.getAttribute('href');
+					var targetElement = document.querySelector(targetId);
+					var headerHeight = document.querySelector('.masthead').offsetHeight;
+
+					window.scrollTo({
+						top: targetElement.offsetTop - headerHeight,
+						behavior: 'smooth'
+					});
+				}
+			}, 1000);
+		}
 
 </script>
 <script type="text/javascript" src="https://app.lifesys.com.br/laudos/plugin/integracao/enviar.js"></script>
