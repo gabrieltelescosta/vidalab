@@ -206,4 +206,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
 
 .dt-mobile-header .buscar-exame {
   margin-top: 20px;
+}
+.dt-mobile-header .buscar-exame #form_laudos {
+  margin: initial;
 }/*# sourceMappingURL=estilo.css.map */
